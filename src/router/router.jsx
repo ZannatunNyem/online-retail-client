@@ -4,7 +4,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
-import ProductDetails from "../Components/Card.jsx/ProductDetails";
+import ProductDetails from "../Components/Card/ProductDetails";
 import Checkout from "../Pages/Checkout";
 import ShopLayout from "../Layout/ShopLayout";
 import ShopProductCards from "../Pages/ShopProductCards";
