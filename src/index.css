@@ -1,2 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #e4dad0; /* cream */
+  --color-secondary: #ffffff; /* white */
+  --color-accent: #565656; /* gray */
+
+  /* Base colors */
+  --color-base-100: #837397; /* purple */
+  --color-base-200: #e4dad0; /* cream*/
+  --color-base-300: #ab170c; /* red*/
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
