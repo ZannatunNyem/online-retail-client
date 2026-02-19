@@ -24,7 +24,7 @@ export default function ProductDetails() {
 
   const handleAddToCart = () => {
     if (!user) {
-      addToCart(); // this will trigger SweetAlert inside the hook
+      addToCart();
       return;
     }
     const cartData = {

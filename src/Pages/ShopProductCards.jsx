@@ -13,11 +13,10 @@ export default function ShopProductCard({ product }) {
 
   const handleAddToCart = () => {
     if (!user) {
-      addToCart(); // this will trigger SweetAlert inside the hook
+      addToCart();
       return;
     }
     const cartData = {
-      // email: user.email,
       email: user.email,
       name: product.title,
       cost: product.priceRange.min,
