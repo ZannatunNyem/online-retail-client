@@ -7,24 +7,30 @@
 
 ## 📖 Project Overview
 
-**Online Retail Client** is a modern and responsive frontend web application built with **React** and **Vite** for showcasing products in an online retail store.  
+**Online Retail Client** is a modern and responsive e-commerce frontend application built with **React** and **Vite**.
 
-Users can browse products, view product details, add items to cart, and enjoy a clean shopping interface.
+Users can browse products and view product details without logging in. However, authentication is required to add products to the cart or proceed to checkout.
 
-This project is built to work with a backend API that provides products, user authentication, and cart management.
+After logging in, users can:
+
+- Add products to their personal cart  
+- Create a Personal Profile
+- Complete the purchase process through a dedicated checkout page  
+
+This application is designed to work with a backend API that manages authentication, product data, and user-specific cart information.
 
 ---
 
-## 🚀 Key Features
+## 📝 Key Features
 
-✔ Browse products listed from backend API  
-✔ View product details  
-✔ Add products to cart  
-✔ Search and sort products  
-✔ User authentication (login/signup)  
-✔ Add to cart with user session tracking  
-✔ Responsive design for mobile, tablet, and desktop  
-✔ Smooth navigation with React Router  
+✔ Browse and view product details  
+✔ Authentication required to add items to cart  
+✔ User-specific cart system  
+✔ Protected routes (Cart & Checkout pages)  
+✔ Checkout page after clicking the Buy button  
+✔ Responsive design (mobile, tablet, desktop)  
+✔ Smooth navigation using React Router  
+✔ SweetAlert notifications 
 
 ---
 
