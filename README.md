@@ -1,16 +1,58 @@
-# React + Vite
+# 🛒 Online Retail Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌐 Live Demo  
+🔗 **Live Site:** _https://coffee-store-app-273a8.web.app/_
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Project Overview
 
-## React Compiler
+**Online Retail Client** is a modern and responsive frontend web application built with **React** and **Vite** for showcasing products in an online retail store.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can browse products, view product details, add items to cart, and enjoy a clean shopping interface.
 
-## Expanding the ESLint configuration
+This project is built to work with a backend API that provides products, user authentication, and cart management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Key Features
+
+✔ Browse products listed from backend API  
+✔ View product details  
+✔ Add products to cart  
+✔ Search and sort products  
+✔ User authentication (login/signup)  
+✔ Add to cart with user session tracking  
+✔ Responsive design for mobile, tablet, and desktop  
+✔ Smooth navigation with React Router  
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology       | Purpose |
+|------------------|---------|
+| **React**        | Core UI library |
+| **Vite**         | Fast development & build tool |
+| **DaisyUI** | Styling |
+| **React Router** | Client-side routing |
+| **Fetch** | API calls |
+
+---
+
+## 📱 Responsive Design
+
+This application is fully responsive and works on:
+
+- 📱 Mobile screens  
+- 💻 Laptop & tablet  
+- 🖥 Desktop  
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/ZannatunNyem/online-retail-client.git
