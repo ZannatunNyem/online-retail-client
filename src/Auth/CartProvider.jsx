@@ -13,7 +13,7 @@ export default function CartProvider({ children }) {
       return;
     }
 
-    fetch(`http://localhost:3000/cart?email=${user.email}`)
+    fetch(`https://online-retail-server.vercel.app/cart?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setCart(data))
       .catch((err) => console.error("Error fetching cart:", err));
@@ -33,9 +33,12 @@ export default function CartProvider({ children }) {
 
       if (!result.isConfirmed) return;
 
-      const response = await fetch(`http://localhost:3000/cart/${id}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `https://online-retail-server.vercel.app/cart/${id}`,
+        {
+          method: "DELETE",
+        },
+      );
 
       if (response.ok) {
         Swal.fire({

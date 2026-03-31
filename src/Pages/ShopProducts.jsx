@@ -8,8 +8,8 @@ export default function ShopProducts() {
 
   useEffect(() => {
     const fetchUrl = category
-      ? `http://localhost:3000/products/category?category=${category}`
-      : `http://localhost:3000/products/category`;
+      ? `https://online-retail-server.vercel.app/products/category?category=${category}`
+      : `https://online-retail-server.vercel.app/products/category`;
 
     fetch(fetchUrl)
       .then((res) => res.json())
