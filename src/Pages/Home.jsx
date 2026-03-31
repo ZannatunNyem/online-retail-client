@@ -13,16 +13,17 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
-        setLoading(false); // stop loading once data is fetched
+        setLoading(false);
+        d;
       })
       .catch((err) => {
         console.error(err);
-        setLoading(false); // stop loading even on error
+        setLoading(false);
       });
   }, []);
 
   if (loading) {
-    return <Loading />; // show spinner while fetching
+    return <Loading />;
   }
 
   return (

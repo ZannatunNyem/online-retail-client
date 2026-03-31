@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import Loading from "../Pages/Loading";
 
 export default function ShopLayout() {
   return (
@@ -61,7 +62,9 @@ export default function ShopLayout() {
           </div>
         </aside>
         <aside className="col-span-3 ">
-          <Outlet></Outlet>
+          <Suspense fallback={<Loading />}>
+            <Outlet />
+          </Suspense>
         </aside>
       </div>
     </div>
