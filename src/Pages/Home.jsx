@@ -3,15 +3,28 @@ import Banner from "../Components/Home/Banner";
 import OnlineProducts from "../Components/Home/OnlineProducts";
 import Feature from "../Components/Home/Feature";
 import Comment from "../Components/Home/Comment";
+import Loading from "./Loading";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("https://online-retail-server.vercel.app/products/category")
       .then((res) => res.json())
-      .then(setProducts);
+      .then((data) => {
+        setProducts(data);
+        setLoading(false); // stop loading once data is fetched
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false); // stop loading even on error
+      });
   }, []);
+
+  if (loading) {
+    return <Loading />; // show spinner while fetching
+  }
+
   return (
     <div>
       <Banner></Banner>
