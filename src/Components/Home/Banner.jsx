@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import girl from "../../img/girl-1.png";
+import girl from "../../img/girl-1.webp";
 import circle from "../../img/circle.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
